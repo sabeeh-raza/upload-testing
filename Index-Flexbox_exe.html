@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox-exercise</title>
+    <style>
+        .section-1{
+            display: flex;             /* Start the flexbox*/
+            justify-content: center;   /* Alignment from left to right*/
+            align-items: center;      /* Alignment from top to bottom*/
+            text-align: center;
+        }
+        .element-1{
+            background-color: grey;
+            flex:1;                    /* Stretch the flexbox-side  33%*/
+            margin: 5px;
+        }
+        .element-2{
+            background-color: red;
+            flex:2;                     /* Stretch the flexbox-side  33%*/
+            margin: 5px;
+        }
+        .element-3{
+            background-color: grey;
+            flex:1;                    /* Stretch the flexbox-side   33%*/
+            margin: 5px;
+        }
+        .element-4{
+            background-color: grey;
+            flex:1;                    /* Stretch the flexbox-side   50%*/
+            margin: 5px;
+        }
+        .element-5{
+            background-color: grey;
+            flex:1;                    /* Stretch the flexbox-side   50%*/
+            margin: 5px;
+        }
+        .element-6{
+            background-color: grey;
+            flex:1;                    /* Stretch the flexbox-side   50%*/
+            margin: 5px;
+        }
+        img{
+            margin: 5px;
+            border: 5px solid green;
+            width: 250px;;
+        }
+        .element-7{
+            background-color: grey;
+            flex:1;                    /* Stretch the flexbox-side   50%*/
+            margin: 5px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="section-1">
+        <div class="element-1">
+            Left Side
+        </div>
+        <div class="element-2">
+            Middle Side
+        </div>
+        <div class="element-3">
+            Right Side
+        </div>
+    </div>
+
+    <div class="section-1">
+        <div class="element-4">
+            Left Side
+        </div>
+        <div class="element-5">
+            Right Side
+        </div>
+    </div>
+
+    <div class="section-1">
+        <div class="element-6">
+            <div class="section-1">
+            <img src="logo.png" alt="Logo">
+            <p>Information</p>
+            </div>
+        </div>
+        <div class="element-7">
+            Right Side
+        </div>
+    </div>
+</body>
+</html>

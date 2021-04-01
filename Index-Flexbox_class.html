@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Live</title>
+    <style>
+        .section-1{
+            display: flex;             /* Start the flexbox*/
+            justify-content: center;   /* Alignment from left to right*/
+            align-items: center;      /* Alignment from top to bottom*/
+        }
+        .left-side{
+            background-color: green;
+            flex:1;                    /* Stretch the flexbox-side  33%*/
+        }
+        .middle-side{
+            background-color: brown;
+            flex:1;                     /* Stretch the flexbox-side  33%*/
+        }
+        .right-side{
+            background-color: blue;
+            flex:1;                    /* Stretch the flexbox-side   33%*/
+        }
+    </style>
+</head>
+<body>
+    <div class="section-1">
+        <div class="left-side">
+            Left Side
+        </div>
+        <div class="middle-side">
+            Middle Side
+        </div>
+        <div class="right-side">
+            Right Side
+        </div>
+    </div>
+</body>
+</html>
